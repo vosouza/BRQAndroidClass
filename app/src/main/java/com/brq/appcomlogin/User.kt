@@ -13,4 +13,8 @@ class User(
     fun validarSenha(valor: String): Boolean {
         return  senha.contentEquals(valor)
     }
+
+    fun loginValidator(password: String, email: String): Boolean{
+        return email.contentEquals(email) && senha.contentEquals(password)
+    }
 }
